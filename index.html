@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mocha Tests</title>
+    <link href="lib/mocha.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+
+  <!-- 👍 YOUR HTML HERE 👍 -->
+  <h1 id="Greeting">Hi, enter your name!</h1>
+  <div>
+    <button onclick="addUserName()">Enter your name</button>
+  </div>
+  <div>
+    <button onclick="displayStats()">Show me my stats</button>
+  </div>
+  <div id="showName"></div>
+  <div id="showHealth"></div>
+  <div id="showHeroic"></div>
+  <div id="showWeapon"></div>
+  <div id="showDamage"></div>
+
+
+
+  <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
+
+ <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
+  <div id="mocha">
+  <!-- MOCHA TEST FEEDBACK WILL BE RENDERED HERE -->
+  </div>
+
+  <script src="lib/chai.js"></script>
+  <script src="lib/mocha.js"></script>
+  <script src="lib/sinon.js"></script>
+  <script>mocha.setup('bdd')</script>
+  <script src="YOUR_JAVASCRIPT_HERE.js"></script>
+  <script src="lib/game_logic.test.js"></script>
+
+</body>
+</html>
